@@ -1,26 +1,38 @@
 /* ===== ESTILOS PERSONALIZADOS ===== */
-
 body {
-    background-color: #f3f8f0;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', sans-serif;
+
+    background-color: #8bda5d; /* color de respaldo */
+    background-image: url("https://c.pxhere.com/photos/a2/56/4k_wallpaper_afterglow_clouds_dawn_dusk_environment_HD_wallpaper_idyllic-1574603.jpg!d");
     
+    background-repeat: no-repeat;       /* ❌ evita duplicados */
+    background-size: cover;             /* 📸 que cubra toda la pantalla */
+    background-position: center center; /* 🎯 centrada */
+    background-attachment: fixed;       /* 📌 efecto parallax opcional */
+    min-height: 100vh;                  /* 🖥️ asegura altura de pantalla */
 }
 
+
 .titulo-custom {
-    color: #2c3e50 !important;
+    color: #ffffff !important;
     font-size: 28px !important;
     font-weight: bold;
     margin-bottom: 20px;
 }
+.form-label{
+    color: #ffffff;
+}
 
 .navbar {
-    background-color: #1a1a1a !important;
+    background-color: #13112bb6 !important;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #00d8ff !important;
+    color: #ffffff !important;
 }
 
 /* Estilo para tabla */
@@ -53,3 +65,19 @@ body {
 .btn:hover {
     opacity: 0.9;
 }
+
+/* ===== HERO PAGE STYLES ===== */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1555992336-03a23c88b3dd'); /* Imagen de restaurante */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 0 20px;
+}
+
