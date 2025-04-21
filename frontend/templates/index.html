@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS personalizado (después de Bootstrap para sobrescribir) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">📝 Gestor de Tareas</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+
+        <h2 class="titulo-custom">Crear Nueva Tarea</h2>
+        <form id="form-tarea" class="mb-4">
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="titulo" required>
+            </div>
+            <div class="mb-3">
+                <label for="prioridad" class="form-label">Prioridad</label>
+                <select id="prioridad" class="form-select">
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha Límite</label>
+                <input type="date" class="form-control" id="fecha">
+            </div>
+            <button type="submit" class="btn btn-success">Crear</button>
+        </form>
+
+        <h2 class="titulo-custom">Lista de Tareas</h2>
+        <table class="table table-striped" id="tabla-tareas">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Prioridad</th>
+                    <th>Fecha Límite</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tareas-body">
+                <!-- Tareas generadas por JS -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
